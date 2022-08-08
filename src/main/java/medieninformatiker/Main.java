@@ -10,9 +10,6 @@ public class Main {
         Book note = new Book();
         note.clearScreen();
 
-
-
-
         System.out.println("Welcome im your personal Notebook");
         System.out.println("Restore Notebook from File? (Y/N)");
         if(input.nextLine().equals("Y")){
