@@ -16,19 +16,43 @@ public class Book {
         //showOptions();
     }
     private ArrayList<String> notes = new ArrayList<>();
+
+    String path = System.getProperty("user.home")+File.separator+"Documents" +File.separator+"NotesApp";
+    File customDir = new File(path);
+    File customPath = new File(path + "\\demo.txt");
     Scanner scan = new Scanner(System.in);
 
     public void loadEntry() throws FileNotFoundException {
-        Scanner importer = new Scanner(new File("C:\\Users\\Commander\\Desktop\\NotesApp\\demo.txt"));
-        while (importer.hasNext()){
-            notes.add((importer.nextLine()));
-        }
+
+       try {
+           Scanner importer = new Scanner(new File(customPath.toURI()));
+           while (importer.hasNext()){
+               notes.add((importer.nextLine()));//
+       }}catch (FileNotFoundException ee){
+           System.out.println(ee.getMessage());
+       }
+
+
         printEntrys();
     }
     public void saveEntrys() throws IOException {
-        Path out = Paths.get("C:\\Users\\Commander\\Desktop\\NotesApp\\demo.txt");
-        Files.write(out,notes, Charset.defaultCharset());
-        System.out.println("Save Successfully");
+
+        try {
+            System.out.println("try exist"+customDir.exists());
+           if(customDir.exists()){
+               Files.write(customPath.toPath(),notes, Charset.defaultCharset());
+               System.out.println("Save Successfully");
+           }else {
+               customDir.mkdirs();
+               Files.write(customPath.toPath(),notes, Charset.defaultCharset());
+               System.out.println("Save Successfully");
+           }
+       }catch (IOException e){
+           System.out.println(e.getMessage());
+       }
+
+
+
     }
     public void showOptions() throws IOException {
         System.out.println("| C:Create Note | E:Edit | D:Delete Note | S:Save | Q:Quit |");
