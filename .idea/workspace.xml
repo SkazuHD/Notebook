@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f54602d-7591-43ea-802b-3a8058f54116" name="Changes" comment="Whitespace :)">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="4f54602d-7591-43ea-802b-3a8058f54116" name="Changes" comment="saves in user directory">
       <change beforePath="$PROJECT_DIR$/src/main/java/medieninformatiker/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/medieninformatiker/Book.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +55,7 @@
       <updated>1659970019263</updated>
       <workItem from="1659970021161" duration="11375000" />
       <workItem from="1659984989163" duration="5705000" />
-      <workItem from="1659990719189" duration="908000" />
+      <workItem from="1659990719189" duration="1146000" />
     </task>
     <task id="LOCAL-00001" summary="Notebook initial Commit">
       <created>1659982379182</created>
@@ -107,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659988973850</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="saves in user directory">
+      <created>1659991798213</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1659991798213</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,7 +138,8 @@
     <MESSAGE value="Asks to save before exit" />
     <MESSAGE value="Asks to Restore when started" />
     <MESSAGE value="Whitespace :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Whitespace :)" />
+    <MESSAGE value="saves in user directory" />
+    <option name="LAST_COMMIT_MESSAGE" value="saves in user directory" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

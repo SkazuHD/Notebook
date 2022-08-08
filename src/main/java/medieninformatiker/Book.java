@@ -38,16 +38,14 @@ public class Book {
     public void saveEntrys() throws IOException {
 
         try {
-            System.out.println("try exist"+customDir.exists());
-           if(customDir.exists()){
-               Files.write(customPath.toPath(),notes, Charset.defaultCharset());
-               System.out.println("Save Successfully");
-           }else {
-               customDir.mkdirs();
-               Files.write(customPath.toPath(),notes, Charset.defaultCharset());
-               System.out.println("Save Successfully");
-           }
-       }catch (IOException e){
+
+            if (!customDir.exists()) {
+                customDir.mkdirs();
+            }
+            Files.write(customPath.toPath(),notes, Charset.defaultCharset());
+            System.out.println("Save Successfully");
+
+        }catch (IOException e){
            System.out.println(e.getMessage());
        }
 
