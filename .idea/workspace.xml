@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f54602d-7591-43ea-802b-3a8058f54116" name="Changes" comment="Writes to and reads from file to restore Notes">
+    <list default="true" id="4f54602d-7591-43ea-802b-3a8058f54116" name="Changes" comment="Asks to save before exit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/medieninformatiker/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/medieninformatiker/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/medieninformatiker/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/medieninformatiker/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +55,7 @@
       <option name="presentableId" value="Default" />
       <updated>1659970019263</updated>
       <workItem from="1659970021161" duration="11375000" />
-      <workItem from="1659984989163" duration="2116000" />
+      <workItem from="1659984989163" duration="2467000" />
     </task>
     <task id="LOCAL-00001" summary="Notebook initial Commit">
       <created>1659982379182</created>
@@ -85,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659986748226</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Asks to save before exit">
+      <created>1659987134961</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1659987134961</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,7 +114,8 @@
     <MESSAGE value="Removed unused imports" />
     <MESSAGE value="its all English now" />
     <MESSAGE value="Writes to and reads from file to restore Notes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Writes to and reads from file to restore Notes" />
+    <MESSAGE value="Asks to save before exit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Asks to save before exit" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
