@@ -1,4 +1,10 @@
 package medieninformatiker;
+
+import java.io.*;
+import java.nio.charset.Charset;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -12,15 +18,24 @@ public class Book {
     private ArrayList<String> notes = new ArrayList<>();
     Scanner scan = new Scanner(System.in);
 
-    public void loadEntry(){
-
+    public void loadEntry() throws FileNotFoundException {
+        Scanner importer = new Scanner(new File("C:\\Users\\Commander\\Desktop\\NotesApp\\demo.txt"));
+        while (importer.hasNext()){
+            notes.add((importer.next()));
+        }
+        printEntrys();
     }
-    public void showOptions(){
+    public void saveEntrys() throws IOException {
+        Path out = Paths.get("C:\\Users\\Commander\\Desktop\\NotesApp\\demo.txt");
+        Files.write(out,notes, Charset.defaultCharset());
+        System.out.println("Save Successfully");
+    }
+    public void showOptions() throws IOException {
         System.out.println("| C:Create Note | E:Edit | D:Delete Note | S:Save | Q:Quit |");
         System.out.print("Make the next operation:");
         chooseOperation();
     }
-    private void chooseOperation(){
+    private void chooseOperation() throws IOException {
         String input = scan.nextLine();
         switch (input){
             case "C":
@@ -36,7 +51,9 @@ public class Book {
                 printEntrys();
                 break;
             case "S":
+                saveEntrys();
                 break;
+
             case "Q":
                 System.exit(0);
                 break;
