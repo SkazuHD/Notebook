@@ -2,7 +2,6 @@ package medieninformatiker;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import static javafx.application.Platform.exit;
 
 
 public class Book {
