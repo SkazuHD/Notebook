@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f54602d-7591-43ea-802b-3a8058f54116" name="Changes" comment="its all English now">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="4f54602d-7591-43ea-802b-3a8058f54116" name="Changes" comment="Writes to and reads from file to restore Notes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/medieninformatiker/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/medieninformatiker/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/medieninformatiker/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/medieninformatiker/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +55,7 @@
       <option name="presentableId" value="Default" />
       <updated>1659970019263</updated>
       <workItem from="1659970021161" duration="11375000" />
-      <workItem from="1659984989163" duration="1687000" />
+      <workItem from="1659984989163" duration="2116000" />
     </task>
     <task id="LOCAL-00001" summary="Notebook initial Commit">
       <created>1659982379182</created>
@@ -80,7 +78,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659982783727</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Writes to and reads from file to restore Notes">
+      <created>1659986748226</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1659986748226</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,7 +106,8 @@
     <MESSAGE value="Notebook initial Commit" />
     <MESSAGE value="Removed unused imports" />
     <MESSAGE value="its all English now" />
-    <option name="LAST_COMMIT_MESSAGE" value="its all English now" />
+    <MESSAGE value="Writes to and reads from file to restore Notes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Writes to and reads from file to restore Notes" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -21,7 +21,7 @@ public class Book {
     public void loadEntry() throws FileNotFoundException {
         Scanner importer = new Scanner(new File("C:\\Users\\Commander\\Desktop\\NotesApp\\demo.txt"));
         while (importer.hasNext()){
-            notes.add((importer.next()));
+            notes.add((importer.nextLine()));
         }
         printEntrys();
     }
@@ -55,7 +55,15 @@ public class Book {
                 break;
 
             case "Q":
-                System.exit(0);
+                System.out.print("Save File? (Y/N):");
+                if (scan.nextLine().equals("Y")){
+                    saveEntrys();
+                    System.exit(0);
+                }else {
+                    System.exit(0);
+                }
+
+
                 break;
             default:
                 clearScreen();
