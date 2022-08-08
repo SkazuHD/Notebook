@@ -3,8 +3,6 @@ package medieninformatiker;
 import java.io.*;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -22,25 +20,26 @@ public class Book {
     File customPath = new File(path + "\\demo.txt");
     Scanner scan = new Scanner(System.in);
 
-    public void loadEntry() throws FileNotFoundException {
+    public void loadEntry() {
 
        try {
            Scanner importer = new Scanner(new File(customPath.toURI()));
            while (importer.hasNext()){
                notes.add((importer.nextLine()));//
-       }}catch (FileNotFoundException ee){
-           System.out.println(ee.getMessage());
+       }}catch (FileNotFoundException e){
+           System.out.println(e.getMessage());
        }
 
 
         printEntrys();
     }
-    public void saveEntrys() throws IOException {
+    public void saveEntrys() {
 
         try {
 
             if (!customDir.exists()) {
                 customDir.mkdirs();
+                System.out.println("Created Directory: "+customDir);
             }
             Files.write(customPath.toPath(),notes, Charset.defaultCharset());
             System.out.println("Save Successfully");
