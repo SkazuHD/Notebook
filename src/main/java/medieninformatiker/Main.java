@@ -6,7 +6,7 @@ public class Main {
 
         Book note = new Book();
         note.clearScreen();
-        System.out.println("Wilkommen in deinem Notizbuch");
+        System.out.println("Welcome im your personal Notebook");
         while (true){
 
             note.showOptions();
